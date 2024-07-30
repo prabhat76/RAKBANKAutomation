@@ -1,8 +1,8 @@
 describe('Outer Rak Bank Digital Banking', () => {
   it('passes', () => {
-    cy.visit("https://conv.rakbankonline.ae/IBRetailUAT/auth")
+    cy.visit("")
     cy.get('[data-testid="username-input"]').type('nandita12')
-    cy.get('[data-testid="password-input"]').type('rakbank123')
+     cy.get('[data-testid="password-input"]').type('rakbank123')
     cy.get('[data-testid="button-login"]').click()
     cy.wait(20000)
     //cy.console("Clicked")
@@ -12,23 +12,58 @@ describe('Outer Rak Bank Digital Banking', () => {
     cy.get('[data-testid="menu-link-send-internationally"]').click()
     cy.wait(1000)
     cy.get('[data-testid="to-select"]').click()
-
-    cy.wait(1000)
-   //cy.get('#react-select-2-option-2').click()
+    cy.wait(2000)
+   cy.get('#react-select-2-option-0').click()
     //cy.get('[data-testid="to-select"]').select('react-select-2-option-0');
     //cy.get('#react-select-5-option-0').click()
     cy.get('[data-testid="from-select"]').click()
     cy.wait(1000)
-
-    cy.get('[data-testid="button-next"]').click()
-    cy.get('[data-testid="remittingCurrency-select"]').type("84")
+    cy.get('#react-select-3-option-0').click()
+    //cy.get('[data-testid="button-next"]').click()
+    cy.get('[data-testid="remittingCurrency-select"]').click()
+    //cy.wait(1000)
+    //cy.get('#react-select-5-option-0-0').click()
+    //cy.get('[data-testid="beneficiaryCountry-select"]').click()
     cy.wait(1000)
+    cy.get('#react-select-4-input').type('AED')
+    cy.wait(1000)
+    cy.get('#react-select-4-option-0').click()
+    cy.get('[data-testid="amount-input"]').type(100)
+    cy.wait(1000)
+    cy.get('[data-testid="chargeType-select"]').click()
+    cy.wait(2000)
+    cy.get('#react-select-7-option-0').click()
+   // cy.get('#react-select-8-option-0').click()
     cy.get('[data-testid="reasons[0]-select"]').click()
-
+    cy.wait(2000)
+    cy.get('#react-select-8-option-0').click()
+    //cy.get('#react-select-5-option-0').click()
+    cy.get('[data-testid="button-next"]').click()
+    cy.wait(2000)
+    cy.get('[data-testid="button-confirm"]').click()
+    cy.wait(1000)
+    cy.get('[data-testid="button-ok"]').click()
+    cy.wait(1000)
+    cy.get('[data-testid="menu-expand-transfers-payments-history"] > .sc-AxirZ').click()
+    cy.wait(1000)
+    cy.get(':nth-child(1) > [data-testid="menu-expand-send-money"]').click()
+    cy.wait(1000)
+    cy.get('[data-testid="menu-link-international-transfers"] > .MenuLinkItem__StyledMenu-vlpzsx-3 > .MenuLinkItem__BoldText-vlpzsx-4').click()
+    cy.wait(1000)
   })
 })
 
+describe('Digital banking Transfer and history', ()=>{
+  it('login Works',()=>{
+    cy.visit("")
+    cy.get('[data-testid="username-input"]').type('nandita12')
+     cy.get('[data-testid="password-input"]').type('rakbank123')
+    cy.get('[data-testid="button-login"]').click()
+    cy.wait(20000)
+    cy.url().should('include', '/dashboard');
 
+  })
+})
 // describe('Rak Bank digital banking register',()=>{
 //   it('register',()=>{
 //     cy.visit("https://conv.rakbankonline.ae/IBRetailUAT/auth")

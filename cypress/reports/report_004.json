@@ -1,0 +1,151 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-07-30T09:59:39.211Z",
+    "end": "2024-07-30T10:01:25.953Z",
+    "duration": 106742,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f2d1884c-0698-4a64-ad9c-254dfc6a183a",
+      "title": "",
+      "fullFile": "cypress/e2e/Rakbank/db.cy.js",
+      "file": "cypress/e2e/Rakbank/db.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "58766c1e-7b92-4bea-9dcb-31e07b5c451c",
+          "title": "Outer Rak Bank Digital Banking",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "Outer Rak Bank Digital Banking passes",
+              "timedOut": null,
+              "duration": 76412,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"\");\ncy.get('[data-testid=\"username-input\"]').type('nandita12');\ncy.get('[data-testid=\"password-input\"]').type('rakbank123');\ncy.get('[data-testid=\"button-login\"]').click();\ncy.wait(20000);\n//cy.console(\"Clicked\")\n//cy.get('[data-testid=\"menu-expand-send-money\"]').click()\n// cy.get('[data-testid=\"menu-item-search\"] > div').click()\ncy.get('[data-testid=\"menu-expand-send-money\"]').click();\ncy.get('[data-testid=\"menu-link-send-internationally\"]').click();\ncy.wait(1000);\ncy.get('[data-testid=\"to-select\"]').click();\ncy.wait(2000);\ncy.get('#react-select-2-option-0').click();\n//cy.get('[data-testid=\"to-select\"]').select('react-select-2-option-0');\n//cy.get('#react-select-5-option-0').click()\ncy.get('[data-testid=\"from-select\"]').click();\ncy.wait(1000);\ncy.get('#react-select-3-option-0').click();\n//cy.get('[data-testid=\"button-next\"]').click()\ncy.get('[data-testid=\"remittingCurrency-select\"]').click();\n//cy.wait(1000)\n//cy.get('#react-select-5-option-0-0').click()\n//cy.get('[data-testid=\"beneficiaryCountry-select\"]').click()\ncy.wait(1000);\ncy.get('#react-select-4-input').type('AED');\ncy.wait(1000);\ncy.get('#react-select-4-option-0').click();\ncy.get('[data-testid=\"amount-input\"]').type(100);\ncy.wait(1000);\ncy.get('[data-testid=\"chargeType-select\"]').click();\ncy.wait(2000);\ncy.get('#react-select-7-option-0').click();\n// cy.get('#react-select-8-option-0').click()\ncy.get('[data-testid=\"reasons[0]-select\"]').click();\ncy.wait(2000);\ncy.get('#react-select-8-option-0').click();\n//cy.get('#react-select-5-option-0').click()\ncy.get('[data-testid=\"button-next\"]').click();\ncy.wait(2000);\ncy.get('[data-testid=\"button-confirm\"]').click();\ncy.wait(1000);\ncy.get('[data-testid=\"button-ok\"]').click();\ncy.wait(1000);\ncy.get('[data-testid=\"menu-expand-transfers-payments-history\"] > .sc-AxirZ').click();\ncy.wait(1000);\ncy.get(':nth-child(1) > [data-testid=\"menu-expand-send-money\"]').click();\ncy.wait(1000);\ncy.get('[data-testid=\"menu-link-international-transfers\"] > .MenuLinkItem__StyledMenu-vlpzsx-3 > .MenuLinkItem__BoldText-vlpzsx-4').click();\ncy.wait(1000);",
+              "err": {},
+              "uuid": "ee49652d-067d-4080-9d72-8b32cf40bca8",
+              "parentUUID": "58766c1e-7b92-4bea-9dcb-31e07b5c451c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ee49652d-067d-4080-9d72-8b32cf40bca8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 76412,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "9f28ccf3-d99a-419b-b822-5d18bd767430",
+          "title": "Digital banking Transfer and history",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login Works",
+              "fullTitle": "Digital banking Transfer and history login Works",
+              "timedOut": null,
+              "duration": 29571,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"\");\ncy.get('[data-testid=\"username-input\"]').type('nandita12');\ncy.get('[data-testid=\"password-input\"]').type('rakbank123');\ncy.get('[data-testid=\"button-login\"]').click();\ncy.wait(20000);\ncy.url().should('include', '/dashboard');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected 'https://conv.rakbankonline.ae/IBRetailUAT/auth' to include '/dashboard'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://conv.rakbankonline.ae/IBRetailUAT/auth' to include '/dashboard'\n    at Context.eval (webpack://cypress_automation_rak/./cypress/e2e/Rakbank/db.cy.js:63:13)",
+                "diff": null
+              },
+              "uuid": "3743f689-8ffd-465d-ba3f-8ecd0b8dab9f",
+              "parentUUID": "9f28ccf3-d99a-419b-b822-5d18bd767430",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3743f689-8ffd-465d-ba3f-8ecd0b8dab9f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 29571,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "code": true,
+        "setupNodeEvents": "[Function setupNodeEvents]"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -6,14 +6,19 @@ module.exports = defineConfig({
     baseUrl:"https://conv.rakbankonline.ae/IBRetailUAT/auth",
     projectId: 'RAK_bank',
     reporter: 'mochawesome',
+    Browser:'chrome', 
+    video: true, // Enable video recording
+    videoCompression: 32, // Video compression level (0-100, where 0 is no compression)
+    videoUploadOnPasses: false, // Set to true if you want to upload videos even when tests pass
+    videosFolder: 'cypress/videos', // Folder where videos will be saved
+    // other configuration options
     reporterOptions: {
       reportDir: 'cypress/reports',
       reportFilename: 'report',
-      overwrite: true,
+      overwrite: false,
       html: true,
       json: true,
-      code: false,
-      video:true,
+      code: true,
       setupNodeEvents(on, config) {
         // Handle unhandled promise rejections
         process.on('unhandledRejection', (reason, promise) => {
@@ -23,7 +28,7 @@ module.exports = defineConfig({
       },
     },
 
-    viewportWidth: 1280,
-    viewportHeight: 720,
+    viewportWidth: 1440,
+    viewportHeight: 1280,
   },
 });
