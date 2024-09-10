@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","75855","Request on IBan Letter for Myself","","Tue Sep 03 15:38:15 IST 2024","passed","Tue Sep 03 15:39:31 IST 2024","","Service Squad Business Banking ","Service Squad Business Banking ","Request on IBan Letter for Myself"
+"","57604","Visit and request iban letter","","Tue Sep 03 15:36:03 IST 2024","passed","Tue Sep 03 15:37:00 IST 2024","","Service Squad Business Banking ","Service Squad Business Banking ","Visit and request iban letter"
+"","74646","Request on IBan Letter","","Tue Sep 03 15:37:01 IST 2024","passed","Tue Sep 03 15:38:15 IST 2024","","Service Squad Business Banking ","Service Squad Business Banking ","Request on IBan Letter"
+"","93901","Request ob IBan Letter for other Entity","","Tue Sep 03 15:39:31 IST 2024","passed","Tue Sep 03 15:41:05 IST 2024","","Service Squad Business Banking ","Service Squad Business Banking ","Request ob IBan Letter for other Entity"

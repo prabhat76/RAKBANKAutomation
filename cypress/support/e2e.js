@@ -29,3 +29,56 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     return false; 
   });
   
+
+//  // const { startWebDriverServer, stopWebDriverServer } = require('cypress-webdriver');
+
+// // module.exports = (on, config) => {
+// //   on('before:browser:launch', async (browser = {}, launchOptions) => {
+// //     // Start the WebDriver server using Perfecto's URL
+// //     await startWebDriverServer({
+// //       serverUrl: process.env.PERFECTO_WEBDRIVER_URL,
+// //       securityToken: process.env.PERFECTO_SECURITY_TOKEN,
+// //       desiredCapabilities: {
+// //         platformName: 'iOS',
+// //         browserName: 'Safari',
+// //         deviceName: 'iPhone-12'
+// //       }
+// //     });
+
+// //     return launchOptions;
+// //   });
+
+// //   on('after:spec', async (spec, results) => {
+// //     // Stop the WebDriver server after tests are completed
+// //     await stopWebDriverServer();
+// //   });
+
+// //   return config;
+// // };
+
+// const { remote } = require('webdriverio');
+
+// let driver;
+
+// before(async () => {
+//   driver = await remote({
+//     path: '/wd/hub',
+//     port: 4723,
+//     capabilities: {
+//       platformName: 'Android',
+//       browserName: 'Chrome',
+//       deviceName: 'Android Emulator',
+//       app: '/path/to/your/app.apk',
+//       automationName: 'UiAutomator2',
+//     },
+//     hostname: 'localhost',
+//     protocol: 'http',
+//   });
+// });
+
+// after(async () => {
+//   await driver.deleteSession();
+// });
+
+// global.browser = driver;
+

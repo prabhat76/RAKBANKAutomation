@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1725357963327' stop='1725358265785'>
+    <name>Service Squad Business Banking </name>
+    <title>Service Squad Business Banking </title>
+    <test-cases>
+        <test-case start='1725357963328' status='passed' stop='1725358020932'>
+            <name>Visit and request iban letter</name>
+            <title>Visit and request iban letter</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1725358021047' status='passed' stop='1725358095693'>
+            <name>Request on IBan Letter</name>
+            <title>Request on IBan Letter</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1725358095822' status='passed' stop='1725358171677'>
+            <name>Request on IBan Letter for Myself</name>
+            <title>Request on IBan Letter for Myself</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1725358171882' status='passed' stop='1725358265783'>
+            <name>Request ob IBan Letter for other Entity</name>
+            <title>Request ob IBan Letter for other Entity</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
