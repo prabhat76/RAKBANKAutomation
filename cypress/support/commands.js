@@ -1,31 +1,5 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
 import { loginPageLocators } from "../locators/loginpage";
 
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
-// cypress/support/commands.js
 
 Cypress.Commands.add('login', (username, password) => {
   if (!username || !password) {
@@ -34,6 +8,34 @@ Cypress.Commands.add('login', (username, password) => {
   cy.get(loginPageLocators.usernameField.css).type(username)
   cy.get(loginPageLocators.passwordField.css).type(password)
   cy.get(loginPageLocators.loginButton.css).click()
+});
+
+Cypress.Commands.add('loginCorporate', (corporateID ,username, password) => {
+  if (!corporateID || !username || !password) {
+    throw new Error('Username or password is undefined');
+  }
+  cy.get('[id="AuthenticationFG.CUSTOM_CORP_ID"]').type(corporateID, { force: true });
+  cy.get('[id="AuthenticationFG\.CUSTOM_USER_ID"]').type(username,{force: true});
+  cy.get(loginPageLocators.passwordField.css).type(password)
+  cy.get(loginPageLocators.loginButton.css).click()
+});
+
+
+Cypress.Commands.add('takeStepScreenshot', (stepDescription) => {
+  const today = new Date();
+  const yyyy = today.getFullYear();
+  const mm = String(today.getMonth() + 1).padStart(2, '0');
+  const dd = String(today.getDate()).padStart(2, '0');
+  const hour = String(today.getHours()).padStart(2, '0');
+  const min = String(today.getMinutes()).padStart(2, '0');
+  const sec = String(today.getSeconds()).padStart(2, '0');
+
+  // Format the filename based on date and time
+  const timestamp = `${yyyy}-${mm}-${dd}_${hour}-${min}-${sec}`;
+  const filename = `${timestamp}_${stepDescription}`;
+
+  // Take the screenshot with the filename
+  cy.screenshot(filename);
 });
 
 

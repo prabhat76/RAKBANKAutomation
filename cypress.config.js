@@ -1,11 +1,6 @@
 const { defineConfig } = require("cypress");
 const mochawesome = require('mochawesome');
-//const { startWebDriverServer, stopWebDriverServer } = require('cypress-webdriver');
 
-//const perfectoConfig = require('perfecto-cypress/config');
-//const PerfectoReporter = require('perfecto-cypress-reporter');
-
-baseUrl="https://conv.rakbankonline.ae/corp6/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&__FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=RAK&USER_TYPE=1",
 module.exports = defineConfig({
   e2e: {
     baseUrl:"https://conv.rakbankonline.ae/corp6/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&__FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=RAK&USER_TYPE=1",
@@ -55,4 +50,3 @@ module.exports = defineConfig({
 
 
 });
-

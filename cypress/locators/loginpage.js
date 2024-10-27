@@ -10,5 +10,9 @@ export const loginPageLocators = {
     loginButton: {
       css: '[id="VALIDATE_CREDENTIALS"]',
       xpath: '//button[@type="submit"]'
+    },
+    corporateID:{
+      css :'id=["AuthenticationFG\.CUSTOM_CORP_ID"]',
+      xpath : '#AuthenticationFG\.CUSTOM_CORP_ID'
     }
   };
