@@ -1,0 +1,35 @@
+{
+    "user": {
+    "corporateID":"woodmansmed",
+      "username": "kthomas",
+      "password": "rakbank123"
+    },
+    "ibanMyself": {
+      "addressTo": "Myself"
+    },
+    "ibanOtherEntity": [
+      {
+        "addressTo": "Other entity",
+        "entityName": "Thakur Dayal Singh",
+        "addressLine1": "Pandit Deen Dayal Upadhyay Junction",
+        "addressLine2": "Uttar Pradesh",
+        "emirate": "Ajman"
+      },
+      {
+        "addressTo": "Other entity",
+        "entityName": "Ravi Kumar",
+        "addressLine1": "Mahatma Gandhi Road",
+        "addressLine2": "Mumbai",
+        "emirate": "Dubai"
+      },
+      {
+        "addressTo": "Other entity",
+        "entityName": "Priya Singh",
+        "addressLine1": "Green Valley Street",
+        "addressLine2": "Delhi",
+        "emirate": "Abu Dhabi"
+      }
+      
+    ]
+  }
+  
