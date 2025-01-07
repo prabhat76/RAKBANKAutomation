@@ -29,6 +29,10 @@ export const serviceSquad = {
   search: {
     css: '[id="PageConfigurationMaster_RSRUX3W__1\\:SEARCH"]',
     href: '[id="HREF_PageConfigurationMaster_RSRUX3W__1\\:SRQueryListFG\\.REFERENCE_ID_ARRAY\\[0\\]"]'
+  },
+
+  payFrom: {
+    css: '[class="labelcolumnsmallnew inputWidthPad new_bold_text type_FEBAUnboundString"]'
   }
    
 };
