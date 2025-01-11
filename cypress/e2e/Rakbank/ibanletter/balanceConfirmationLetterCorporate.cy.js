@@ -2,17 +2,21 @@ import { dashboard } from "../../../locators/dashboard";
 import { serviceSquad } from "../../../locators/ServiceSquad";
 
 describe("Service Squad Business Banking", () => {
-  // Before each test, load the SME login page and navigate to the URL
+  // Before each test, load the IBAN data fixture and navigate to the URL
   beforeEach(function () {
-    cy.fixture('balanceConfirmationLetter').as('balanceConfirmationLetterSME');
-    cy.visit("https://conv.rakbankonline.ae/corp4/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&__FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=RAK&USER_TYPE=1"); // Base URL already set in config
+    cy.fixture('balanceConfirmationLetterCorporate').as('balanceConfirmationLetter');
+    cy.visit("https://conv.rakbankonline.ae/corp4/AuthenticationController?__START_TRAN_FLAG__=Y&FORMSGROUP_ID__=AuthenticationFG&__EVENT_ID__=LOAD&FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=RAK&LANGUAGE_ID=001&CORP_USER_FLG=Y");
   });
 
   it("Balance confirmation letter for myself and Delivery by Email", function() {
 
 
-    cy.login(this.balanceConfirmationLetterSME.user.username, this.balanceConfirmationLetterSME.user.password);
-    cy.wait(3000)
+    cy.loginCorporate(this.balanceConfirmationLetter.user.corporateID, this.balanceConfirmationLetter.user.username, 
+        this.balanceConfirmationLetter.user.password);
+    cy.wait(3000);
+   cy.takeStepScreenshot('Login_Success'); // Screenshot after login 
+   cy.wait(3000);   
+    
    cy.takeStepScreenshot('Login_Success'); // Screenshot after login 
    cy.wait(3000);   
     cy.get(dashboard.Services.css).click();
@@ -315,4 +319,4 @@ describe("Service Squad Business Banking", () => {
 //     cy.wait(3000);
 //     cy.get('#PageConfigurationMaster_RSRUX3W__1\:CustomAcctListFG\.SELECTED_INDEX_ARRAY\[0\]').should('be.visible').click(); //Account number selected
 //     cy.get('#PageConfigurationMaster_RSRUX3W__1\:FormManagementFG\.T_AND_C_FLAG').should('be.visible').click(); //Selected the Terms and conditions checkbox
-  })
+})

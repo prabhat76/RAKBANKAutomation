@@ -7,8 +7,10 @@
     "build": "npx cypress run --browser=chrome --headed --spec cypress/e2e/**/**cy.js --reporter mocha-allure-reporter",
     "browser:chrome": "npx cypress run --browser=chrome --headed --spec cypress/e2e/Rakbank/**cy.js --reporter mocha-allure-reporter",
     "report:allure": "allure generate allure-results --clean -o allure-report && allure open allure-report",
-    "iban:serviceSquad": "npx cypress run --browser=chrome --headed --spec cypress/e2e/Rakbank/ibanletter/**/**cy.js --reporter mocha-allure-reporter"
-  },
+    "iban:serviceSquad": "npx cypress run --browser=chrome --headed --spec cypress/e2e/Rakbank/ibanletter/**/**cy.js --reporter mocha-allure-reporter",
+  "Iban:serviceSquad": "npx cypress run --browser=chrome --headed --spec cypress/e2e/Rakbank/ibanletter/**/**cy.js --reporter mocha-allure-reporter"
+  }
+    ,
   "keywords": [],
   "author": "",
   "license": "ISC",
