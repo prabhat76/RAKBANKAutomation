@@ -1,0 +1,76 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1738132765433' stop='1738133177966'>
+    <name>Service Squad Business Banking</name>
+    <title>Service Squad Business Banking</title>
+    <test-cases>
+        <test-case start='1738132765433' status='broken' stop='1738132800427'>
+            <name>Balance confirmation letter for myself and Delivery by Email</name>
+            <title>Balance confirmation letter for myself and Delivery by Email</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Zr.set is not a function</message>
+                <stack-trace>TypeError: Zr.set is not a function
+                    at Yr (https://cdn.userway.org/remediation/2025-01-21-14-07-56/paid/remediation-tool.js?ts=1737468476256:1:38819)
+                    at wn (https://cdn.userway.org/remediation/2025-01-21-14-07-56/paid/remediation-tool.js?ts=1737468476256:1:44407)
+                    at &lt;unknown> (https://cdn.userway.org/remediation/2025-01-21-14-07-56/paid/remediation-tool.js?ts=1737468476256:1:44982)
+                    at m (https://cdn.userway.org/remediation/2025-01-21-14-07-56/paid/remediation-tool.js?ts=1737468476256:1:13458)
+                    at h (https://cdn.userway.org/remediation/2025-01-21-14-07-56/paid/remediation-tool.js?ts=1737468476256:1:13683)
+                    at g (https://cdn.userway.org/remediation/2025-01-21-14-07-56/paid/remediation-tool.js?ts=1737468476256:1:13572)
+                    at o (https://conv.rakbankonline.ae/corp3/AuthenticationController;jsessionid=00007QfXQNC7Zis3v-WLuPp077R:-1?bwayparam=tkcQ60oGcWw97ho9NfXl%2FVtTQLnRsPM9ml%2FVRbMyf7I%3D:24:455)
+                    at &lt;unknown> (https://conv.rakbankonline.ae/corp3/AuthenticationController;jsessionid=00007QfXQNC7Zis3v-WLuPp077R:-1?bwayparam=tkcQ60oGcWw97ho9NfXl%2FVtTQLnRsPM9ml%2FVRbMyf7I%3D:24:1226)
+                    at Array.forEach (&lt;anonymous>)
+                    at $Cypress.pause (https://conv.rakbankonline.ae/corp3/AuthenticationController;jsessionid=00007QfXQNC7Zis3v-WLuPp077R:-1?bwayparam=tkcQ60oGcWw97ho9NfXl%2FVtTQLnRsPM9ml%2FVRbMyf7I%3D:24:1142)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1738132800494' status='passed' stop='1738133038171'>
+            <name>Balance confirmation letter for Other Entity and Delivery by Email</name>
+            <title>Balance confirmation letter for Other Entity and Delivery by Email</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1738133038476' status='broken' stop='1738133078236'>
+            <name>Balance confirmation letter for myself and Delivery by Email</name>
+            <title>Balance confirmation letter for myself and Delivery by Email</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Zr.set is not a function</message>
+                <stack-trace>TypeError: Zr.set is not a function
+                    at Yr (https://cdn.userway.org/remediation/2025-01-21-14-07-56/paid/remediation-tool.js?ts=1737468476256:1:38819)
+                    at wn (https://cdn.userway.org/remediation/2025-01-21-14-07-56/paid/remediation-tool.js?ts=1737468476256:1:44407)
+                    at &lt;unknown> (https://cdn.userway.org/remediation/2025-01-21-14-07-56/paid/remediation-tool.js?ts=1737468476256:1:44982)
+                    at m (https://cdn.userway.org/remediation/2025-01-21-14-07-56/paid/remediation-tool.js?ts=1737468476256:1:13458)
+                    at h (https://cdn.userway.org/remediation/2025-01-21-14-07-56/paid/remediation-tool.js?ts=1737468476256:1:13683)
+                    at g (https://cdn.userway.org/remediation/2025-01-21-14-07-56/paid/remediation-tool.js?ts=1737468476256:1:13572)
+                    at o (https://conv.rakbankonline.ae/corp3/AuthenticationController;jsessionid=00003kRmBGbhaRfq4rI3hO3wOW1:-1?bwayparam=afOu0Hg3WYdLHurV%2BDzkhN52UVd896zvfkGL1iR8dVY%3D:24:455)
+                    at &lt;unknown> (https://conv.rakbankonline.ae/corp3/AuthenticationController;jsessionid=00003kRmBGbhaRfq4rI3hO3wOW1:-1?bwayparam=afOu0Hg3WYdLHurV%2BDzkhN52UVd896zvfkGL1iR8dVY%3D:24:1226)
+                    at Array.forEach (&lt;anonymous>)
+                    at $Cypress.pause (https://conv.rakbankonline.ae/corp3/AuthenticationController;jsessionid=00003kRmBGbhaRfq4rI3hO3wOW1:-1?bwayparam=afOu0Hg3WYdLHurV%2BDzkhN52UVd896zvfkGL1iR8dVY%3D:24:1142)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1738133078459' status='failed' stop='1738133177887'>
+            <name>Balance confirmation letter for myself and Delivery by branch</name>
+            <title>Balance confirmation letter for myself and Delivery by branch</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: expected '&lt;span#PageConfigurationMaster_RSRUX3W__1:chargeDigital.new_Charge_style>' to be 'visible'
+                
+                This element `&lt;span#PageConfigurationMaster_RSRUX3W__1:chargeDigital.new_Charge_style>` is not visible because its content is being clipped by one of its parent elements, which has a CSS property of overflow: `hidden`, `scroll` or `auto`</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: expected '&lt;span#PageConfigurationMaster_RSRUX3W__1:chargeDigital.new_Charge_style>' to be 'visible'
+                
+                This element `&lt;span#PageConfigurationMaster_RSRUX3W__1:chargeDigital.new_Charge_style>` is not visible because its content is being clipped by one of its parent elements, which has a CSS property of overflow: `hidden`, `scroll` or `auto`
+                    at Context.eval (webpack://cypress_automation_rak/./cypress/e2e/Rakbank/ibanletter/balanceconfirmationletter.cy.js:645:56)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

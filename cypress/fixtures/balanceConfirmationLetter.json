@@ -1,20 +1,13 @@
 {
     "user": {
-      "username": "MOHANAN11",
+     "username": "ABM2018",
       "password": "rakbank123"
     },
-    "ibanMyself": {
-      "addressTo": "Myself"
-    },
-    "ibanOtherEntity": [
-      {
-      "addressTo": "Other entity",
-      "entityName": "Thakur Dayal Singh",
-      "addressLine1": "Pandit Deen Dayal Upadhyay Junction",
-      "addressLine2": "Uttar Pradesh",
-      "emirate": "Ajman"
+    "customer":{
+      "addressTo":"Self",
+      "balanceasOf":"28/01/2025"
     }
-  ]
+  
   
   }
   

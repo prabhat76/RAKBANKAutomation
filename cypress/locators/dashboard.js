@@ -10,5 +10,12 @@ export const dashboard = {
   serviceSelector: {
     css: ':nth-child(1) > .services-block-header',
     xpath: '//button[@type="submit"]'
-  }
+  },
+  accountsSelector:{
+css:':nth-child(2) > .services-block-header',
+balanceConfirmation: {
+  css:'[id="PageConfigurationMaster_RSRUX3W__1\:BCL1"]'
+  },
+}
+
 };
