@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1738131996619' stop='1738132279723'>
+    <name>Service Squad Business Banking</name>
+    <title>Service Squad Business Banking</title>
+    <test-cases>
+        <test-case start='1738131996619' status='failed' stop='1738132086555'>
+            <name>Balance confirmation letter for myself and Delivery by Email</name>
+            <title>Balance confirmation letter for myself and Delivery by Email</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: expected '&lt;input#PageConfigurationMaster_RSRUX3W__1:FormManagementFG.CONFIRM_BALANCE_AS_OF_DATE_comboText.ui-state-default.ui-combobox-input.ui-autocomplete-input.ui-widget.ui-widget-content.ui-corner-left>' to have value '28/01/2025', but the value was '31/12/2024'</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: expected '&lt;input#PageConfigurationMaster_RSRUX3W__1:FormManagementFG.CONFIRM_BALANCE_AS_OF_DATE_comboText.ui-state-default.ui-combobox-input.ui-autocomplete-input.ui-widget.ui-widget-content.ui-corner-left>' to have value '28/01/2025', but the value was '31/12/2024'
+                    at Context.eval (webpack://cypress_automation_rak/./cypress/e2e/Rakbank/ibanletter/balanceconfirmationletter.cy.js:45:3)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1738132086643' status='broken' stop='1738132168413'>
+            <name>Balance confirmation letter for Other Entity and Delivery by Email</name>
+            <title>Balance confirmation letter for Other Entity and Delivery by Email</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of null (reading '0')</message>
+                <stack-trace>TypeError: Cannot read properties of null (reading '0')
+                    at https://conv.rakbankonline.ae/corp3/scripts/ria/ajaxfeatures/jquery.mCustomScrollbar.concat.min.js:1:36429
+                    at o (https://conv.rakbankonline.ae/corp3/RAKBANK;jsessionid=0000-Qj6DJgbsMYrLn52eQpCso5:-1?bwayparam=00lr5z0Fcwjntlv%2FSCuxeTdVdVZJlOos%2B7Fdu3kdZmeHDWe0uBkEJxyQAZGmR6PEmJcATbim1dzri8m%2BTMxyCN%2B0wnk3XnnpCgNZK6ojlypHhkz5qkqsIyyj48WQKel4%0D%0AgZZlOhCrudimh6v23dkvWwhwvDu1A3vsyYbumPg3RrWy2p9TRhWSfZWafZDuj%2BR2ZTOMpUZ9Mjy4spp2gThpmEstSbzclZ98icsia2loxqY%3D:24:455)
+                    at https://conv.rakbankonline.ae/corp3/RAKBANK;jsessionid=0000-Qj6DJgbsMYrLn52eQpCso5:-1?bwayparam=00lr5z0Fcwjntlv%2FSCuxeTdVdVZJlOos%2B7Fdu3kdZmeHDWe0uBkEJxyQAZGmR6PEmJcATbim1dzri8m%2BTMxyCN%2B0wnk3XnnpCgNZK6ojlypHhkz5qkqsIyyj48WQKel4%0D%0AgZZlOhCrudimh6v23dkvWwhwvDu1A3vsyYbumPg3RrWy2p9TRhWSfZWafZDuj%2BR2ZTOMpUZ9Mjy4spp2gThpmEstSbzclZ98icsia2loxqY%3D:24:1226
+                    at Array.forEach (&lt;anonymous>)
+                    at $Cypress.pause (https://conv.rakbankonline.ae/corp3/RAKBANK;jsessionid=0000-Qj6DJgbsMYrLn52eQpCso5:-1?bwayparam=00lr5z0Fcwjntlv%2FSCuxeTdVdVZJlOos%2B7Fdu3kdZmeHDWe0uBkEJxyQAZGmR6PEmJcATbim1dzri8m%2BTMxyCN%2B0wnk3XnnpCgNZK6ojlypHhkz5qkqsIyyj48WQKel4%0D%0AgZZlOhCrudimh6v23dkvWwhwvDu1A3vsyYbumPg3RrWy2p9TRhWSfZWafZDuj%2BR2ZTOMpUZ9Mjy4spp2gThpmEstSbzclZ98icsia2loxqY%3D:24:1142)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1738132168457' status='failed' stop='1738132256316'>
+            <name>Balance confirmation letter for myself and Delivery by Email</name>
+            <title>Balance confirmation letter for myself and Delivery by Email</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: Expected to find element: `[id="PageConfigurationMaster_RSRUX3W__1:DisplayForm.R2.C1"]`, but never found it.</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id="PageConfigurationMaster_RSRUX3W__1:DisplayForm.R2.C1"]`, but never found it.
+                    at Context.eval (webpack://cypress_automation_rak/./cypress/e2e/Rakbank/ibanletter/balanceconfirmationletter.cy.js:357:74)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1738132256371' status='failed' stop='1738132279605'>
+            <name>Balance confirmation letter for myself and Delivery by branch</name>
+            <title>Balance confirmation letter for myself and Delivery by branch</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: Expected to find element: `[id="ID_RGNS"]`, but never found it.</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id="ID_RGNS"]`, but never found it.
+                    at Context.eval (webpack://cypress_automation_rak/./cypress/e2e/Rakbank/ibanletter/balanceconfirmationletter.cy.js:592:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

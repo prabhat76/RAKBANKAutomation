@@ -33,6 +33,18 @@ export const serviceSquad = {
 
   payFrom: {
     css: '[class="labelcolumnsmallnew inputWidthPad new_bold_text type_FEBAUnboundString"]'
+  },
+
+  balanceasof: {
+    css: '[id="PageConfigurationMaster_RSRUX3W__1\\:FormManagementFG\\.CONFIRM_BALANCE_AS_OF_DATE_comboButton"]'
+  },
+  selectedDate:{
+    css: '[id="PageConfigurationMaster_RSRUX3W__1\\:FormManagementFG\\.CONFIRM_BALANCE_AS_OF_DATE_comboText"]'
+  },
+  balanceConfirmationaddress:{
+    css:'[id="PageConfigurationMaster_RSRUX3W__1\\:FormManagementFG\\.ADDRESS_TO"]'
   }
+
+
    
 };

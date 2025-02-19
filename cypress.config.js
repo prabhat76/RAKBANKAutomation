@@ -30,7 +30,7 @@ module.exports = defineConfig({
     },
     screenshot: {
       // Specify the default screenshot settings here
-      screenshotsFolder:'cypress/results/screenshots',
+      //creenshotsFolder:'cypress/results/screenshots',
       capture: 'fullPage', // Capture the full page or the viewport
       // You can also configure other settings if needed
     },
